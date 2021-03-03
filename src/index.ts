@@ -1,7 +1,7 @@
 import fs from 'fs';
 import dotenv from 'dotenv';
 import { validate as isEmail } from 'isemail';
-import Mailer from './mail/mailer';
+import Mailer from './mail/Mailer';
 
 dotenv.config();
 
