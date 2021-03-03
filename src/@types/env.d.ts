@@ -3,4 +3,5 @@ interface Env {
   EMAIL: string;
   PASS: string;
   SUBJ: string;
+  ATTACHMENTS?: string;
 }
