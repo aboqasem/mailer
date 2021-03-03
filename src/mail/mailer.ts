@@ -16,9 +16,9 @@ class Mailer {
     });
   }
 
-  send = (mailOptions: MailOptions) => {
+  send = async (mailOptions: MailOptions) => {
     const { subject, to } = mailOptions;
-    this.mail
+    await this.mail
       .sendMail(mailOptions)
       .then((v) => {
         console.log(TextStyles.blue(`Successfully sent ${subject} to ${to}!`));
